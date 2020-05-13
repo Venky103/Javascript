@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <title> Assignmenet 2
+    </title>
+    <head>
+       <h2> Day 2-Q1</h2>
+
+    </head>
+    <body>
+        <p>The highest number is <span id="demo"></span>.</p>
+           <script>
+            
+                var x= [1,2,3,4,5,6,7,8,9,10]
+                document.getElementById('demo').innerHTML=myArrayMax(x);
+
+                function myArrayMax(arr) 
+                {
+                  return Math.max.apply(null, arr);
+                }
+            
+        </script>
+    </body>
+</html>
