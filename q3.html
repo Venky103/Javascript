@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id='demo'>square of a number</p>
+        <p id='demo1'>cube of a number</p>
+
+        <button type="button" onclick= "document.getElementById('demo').innerHTML= Math.square(mymath)">click me</button>
+        <button type="button" onclick= "document.getElementById('demo1').innerHTML= Math.cube(mymath)">click me</button>
+
+
+        <script>
+            class Math
+            {
+                constructor(number)
+                {
+                    this.no = number;
+                }
+
+                static  square(x)
+            {
+                return x.no * x.no;
+            }
+
+            static cube(x)
+            {
+                return x.no*x.no*x.no;
+            }
+
+            }
+
+            mymath = new Math('3');
+
+            
+
+
+        </script>
+        
+    </body>
+</html>
